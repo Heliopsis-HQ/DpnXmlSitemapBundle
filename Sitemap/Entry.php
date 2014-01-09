@@ -60,7 +60,6 @@ class Entry
     {
         if ($lastMod instanceof \DateTime) {
             $this->lastMod = $lastMod->format('Y-m-d');
-
             return;
         }
 
