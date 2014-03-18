@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
   http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 {% for entry in entries %}
-	{% if entry.scheme is defined %}
+	{% if entry.scheme is defined and entry.scheme != '' %}
 		{% set scheme = entry.scheme %}
 	{% else %}
 		{% set scheme = app.request.getScheme %}
